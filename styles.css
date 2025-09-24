@@ -1,111 +1,30 @@
-/* General Styles */
-body {
-    font-family: 'Helvetica Neue', Arial, sans-serif;
-    background-color: #2C2F33; /* Dark background */
-    color: #EEE; /* Light text */
-    margin: 0;
-    padding: 0px;
-    line-height: 1.6;
+/* Page basics */
+*{box-sizing:border-box}
+body{max-width:980px;margin:0 auto;padding:16px;line-height:1.6;font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial}
+header{display:flex;justify-content:space-between;align-items:center;gap:16px;margin-bottom:24px}
+header ul{display:flex;gap:12px;list-style:none;margin:0;padding:0}
+
+/* About layout */
+#about .profile{
+  display:grid;
+  grid-template-columns: 180px 1fr;   /* image | text */
+  gap: 20px;
+  align-items:start;                   /* keep image aligned to top */
+}
+#about .profile img{
+  width:180px;
+  height:180px;
+  object-fit:cover;
+  border-radius:12px;
+  flex-shrink:0;
 }
 
-header {
-    background-color: #23272A;
-    color: #FFF;
-    padding: 20px;
-    text-align: center;
-}
-
-header h1 {
-    margin: 0;
-    font-size: 2.5em;
-}
-
-nav ul {
-    list-style: none;
-    padding: 0;
-}
-
-nav ul li {
-    display: inline;
-    margin-right: 15px;
-}
-
-nav ul li a {
-    color: #FFF;
-    text-decoration: none;
-    transition: color 0.3s ease;
-}
-
-nav ul li a:hover {
-    color: #7289DA; /* Subtle hover effect */
-}
-
-section {
-    padding: 40px 20px;
-    max-width: 1000px;
-    margin: 0 auto;
-}
-
-h2 {
-    font-size: 2em;
-    margin-bottom: 20px;
-}
-
-/* About Section */
-#about .profile {
-    display: flex;
-    align-items: center;
-}
-
-#about img {
-    width: 150px;
-    border-radius: 50%;
-    margin-right: 20px;
-}
-
-#about .about-text {
-    max-width: 600px;
-}
-
-.social-links a {
-    display: inline-block;
-    margin-right: 10px;
-    color: #7289DA; /* Darker blue color */
-    text-decoration: none;
-    transition: transform 0.3s ease, color 0.3s ease;
-}
-
-.social-links a:hover {
-    transform: scale(1.1); /* Hover effect */
-    color: #FFF;
-}
-
-/* Research Section */
-#research p {
-    font-size: 1.1em;
-}
-
-/* Contact Section */
-#contact p {
-    font-size: 1.1em;
-}
-
-#contact a {
-    color: #7289DA;
-    text-decoration: none;
-}
-
-#contact a:hover {
-    text-decoration: underline;
-}
-
-/* Footer */
-footer {
-    background-color: #23272A;
-    color: #FFF;
-    text-align: center;
-    padding: 20px;
-    position: relative;
-    bottom: 0;
-    width: 100%;
+/* Make it stack nicely on mobile */
+@media (max-width: 700px){
+  #about .profile{
+    grid-template-columns: 1fr;
+  }
+  #about .profile img{
+    width:140px;height:140px;
+  }
 }
