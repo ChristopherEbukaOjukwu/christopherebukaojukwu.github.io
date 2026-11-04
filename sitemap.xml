@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url><loc>https://christopherojukwu.com/</loc></url>
-  <url><loc>https://christopherojukwu.com/about.html</loc></url>
-  <url><loc>https://christopherojukwu.com/research.html</loc></url>
-  <url><loc>https://christopherojukwu.com/teaching.html</loc></url>
-  <url><loc>https://christopherojukwu.com/cv.html</loc></url>
-  <url><loc>https://christopherojukwu.com/contact.html</loc></url>
+  <url><loc>https://christopherojukwu.com/about/</loc></url>
+  <url><loc>https://christopherojukwu.com/research/</loc></url>
+  <url><loc>https://christopherojukwu.com/teaching/</loc></url>
+  <url><loc>https://christopherojukwu.com/cv/</loc></url>
+  <url><loc>https://christopherojukwu.com/contact/</loc></url>
 </urlset>
