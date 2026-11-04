@@ -43,7 +43,7 @@ h1, .serif { font-family: Georgia, "Times New Roman", serif; font-weight: 400; }
 .inline-arrow span { font-size: 17px; font-weight: 400; }
 .secondary-arrow { color: var(--muted); font-weight: 450; border-bottom-color: #c7cbc4; }
 .portrait-wrap { margin: 0; align-self: start; }
-.portrait-wrap img { display: block; width: 100%; aspect-ratio: 3/4; object-fit: cover; object-position: 50% 38%; background: #e3e6e0; filter: saturate(.7) contrast(.97); }
+.portrait-wrap img { display: block; width: 100%; height: 100%; aspect-ratio: 3/4; object-fit: cover; object-position: center top; background: #e3e6e0; filter: saturate(.7) contrast(.97); }
 .portrait-wrap figcaption { font-size: 10px; letter-spacing: .04em; margin-top: 11px; color: #8d908b; }
 .page-heading { padding: 90px 0 62px; border-bottom: 1px solid var(--line); }
 .page-heading .eyebrow { margin-bottom: 24px; }
